@@ -14,8 +14,7 @@ class Auth
 		$header = json_encode($header);
 		$header = base64_encode($header);
 
-		$payload = $payloads
-	];
+		$payload = $payloads;
 	$payload = json_encode($payload);
 	$payload = base64_encode($payload);
 
