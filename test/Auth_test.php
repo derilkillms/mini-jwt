@@ -34,7 +34,7 @@ class Auth_test
 			if ($payload->exp < time()) {
             return false; // token has expired
         }
-        return $payload; // token is valid
+        return true; // token is valid
     } else {
         return false; // token is invalid
     }
