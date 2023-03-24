@@ -40,7 +40,7 @@ class Auth
 			if ($payload->exp < time()) {
            		 return false; // token has expired
         	}
-	        return true; // token is valid
+	        return $payload; // token is valid
 	    } else {
 	        return false; // token is invalid
 	    }
